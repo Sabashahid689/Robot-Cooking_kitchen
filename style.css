@@ -1,0 +1,134 @@
+/* 🌈 Page Setup */
+body {
+  background: linear-gradient(to right, #ffcc80, #ffb74d);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🍳 Kitchen Container */
+.kitchen {
+  padding: 30px;
+}
+
+/* 🤖 Robot Section */
+.robot img {
+  width: 180px;
+  border-radius: 20px;
+  animation: bounce 2s infinite;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+#robotSpeech {
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  margin-top: 10px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* 🍛 Menu Buttons */
+.menu {
+  margin-top: 25px;
+}
+
+.menu h2 {
+  color: #ff5722;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.menu button {
+  background-color: #ff7043;
+  border: none;
+  padding: 12px 25px;
+  margin: 8px;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #d84315;
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* 🍽️ Food Display Box */
+.food-display {
+  margin-top: 40px;
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: inline-block;
+  max-width: 400px;
+  animation: fadeIn 1s ease;
+}
+
+/* 🍲 Food Images */
+.food-display img {
+  display: none;
+  width: 250px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  border: 3px solid #ff7043;
+  transition: transform 0.3s ease;
+}
+
+.food-display img:hover {
+  transform: scale(1.05);
+}
+
+/* 📝 Title and Recipe */
+#foodTitle {
+  font-size: 24px;
+  color: #ff5722;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#foodRecipe {
+  font-size: 16px;
+  color: #444;
+  white-space: pre-line;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 600px) {
+  .food-display {
+    width: 85%;
+  }
+
+  .menu button {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  #robotSpeech {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+/* ✨ Animation for Food Box */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

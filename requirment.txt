@@ -1,0 +1,11 @@
+robot-cooking-kitchen/
+│
+├── index.html
+├── style.css
+├── script.js
+└── images/
+     ├── Robot.JPEG
+     ├── Biryani.jpg
+     ├── Chicken Karahi.JPEG
+     ├── Haleem.JPEG
+     └── Nihari.JPEG

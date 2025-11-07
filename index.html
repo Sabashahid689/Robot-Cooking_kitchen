@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot Cooking Kitchen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kitchen">
+    <h1>🤖 Robot Cooking Kitchen 🇵🇰</h1>
+    <div class="robot">
+      <img src="Robot.JPEG" alt=" Cooking Robot">
+      <p id="robotSpeech">Hello! I’m your Pakistani Chef Robot 🍛</p>
+    </div>
+
+    <div class="menu">
+      <h2>Select a Dish:</h2>
+      <button onclick="cook('Biryani')">Biryani</button>
+      <button onclick="cook('Karahi')">Chicken Karahi</button>
+      <button onclick="cook('Haleem')">Haleem</button>
+      <button onclick="cook('Nihari')">Nihari</button>
+      <button onclick="cook('Pasta')">Pasta</button>
+      <button onclick="cook('Kofta')">Kofta</button>
+    </div>
+
+    <div class="food-display" id="foodDisplay">
+      <img id="Biryani" src="Biryani.JPEG" alt="">
+      <img id="Chicken Karahi" src="Chicken Karahi.JPEG" alt="">
+      <img id="Haleem" src="Haleem.JPEG" alt="">
+      <img id="Nihari" src="Nihari.JPEG" alt="">
+      <img id="Pasta" src="Pasta.JPEG" alt="">
+      <img id="Kofta" src="Kofta.JPEG" alt="">
+      <h3 id="foodTitle"></h3>
+      <p id="foodRecipe"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
